@@ -82,7 +82,7 @@ make V=s -j$(nproc)
 如果需要重新配置：
 
 ```bash
-rm -rf .config
+rm -rf .tmp && rm -rf .config
 make menuconfig
 make V=s -j$(nproc)
 ```
